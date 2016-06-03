@@ -5,4 +5,8 @@ class Table < ActiveRecord::Base
     seats > students.length
   end
 
+  def full?
+    seats == students.length
+  end
+
 end
